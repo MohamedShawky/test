@@ -1,0 +1,108 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.develp.app.movieudacityapp.HomeDetailes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/layout">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:text="originalTitle"
+                  android:layout_height="0dp"
+                  android:layout_weight="2"
+                  android:id="@+id/Title"
+                  android:textColor="@color/cardview_dark_background"
+                  android:textSize="30dp"
+                  android:paddingTop="50dp"
+                  android:paddingBottom="40dp" />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:background="@color/layoutin">
+                  <ImageView
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:id="@+id/posterImageView"
+                      android:scaleType="fitXY"
+                      android:layout_weight="1" />
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:background="@color/layoutin">
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:id="@+id/dateText"
+                          android:textSize="20dp"
+                          android:textColor="@color/cardview_dark_background"
+                          android:text="originalTitle"/>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:id="@+id/timeText"
+                          android:textSize="20dp"
+                          android:textColor="@color/cardview_dark_background"
+                          android:text="originalTitle"/>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:id="@+id/voteText"
+                          android:textSize="20dp"
+                          android:textColor="@color/cardview_dark_background"
+                          android:text="originalTitle"/>
+                      <Button
+                          android:layout_width="100dp"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:id="@+id/favButton"
+                          android:textSize="20sp"
+                          android:background="@color/butoncolor"
+                          android:text="MAKE AS FAVORITE"/>
+                  </LinearLayout>
+              </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/layoutin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trailer"
+                    android:textSize="30sp"
+                    android:textColor="@color/cardview_dark_background"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewTrialer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
